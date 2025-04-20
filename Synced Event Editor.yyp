@@ -33,7 +33,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Synced Event Editor",
   "resources":[
@@ -50,7 +50,7 @@
     {"id":{"name":"scr_gui_init_font","path":"scripts/scr_gui_init_font/scr_gui_init_font.yy",},},
     {"id":{"name":"scr_gui_init_resolution","path":"scripts/scr_gui_init_resolution/scr_gui_init_resolution.yy",},},
     {"id":{"name":"scr_play_button_sfx","path":"scripts/scr_play_button_sfx/scr_play_button_sfx.yy",},},
-    {"id":{"name":"mus_sakurite","path":"sounds/mus_sakurite/mus_sakurite.yy",},},
+    {"id":{"name":"mus_music","path":"sounds/mus_music/mus_music.yy",},},
     {"id":{"name":"sfx_select","path":"sounds/sfx_select/sfx_select.yy",},},
     {"id":{"name":"spr_ui_button_1","path":"sprites/spr_ui_button_1/spr_ui_button_1.yy",},},
     {"id":{"name":"spr_ui_pause","path":"sprites/spr_ui_pause/spr_ui_pause.yy",},},
