@@ -28,7 +28,7 @@ global.misc = {
 	STRUCTEND: 0
 }
 global.music = mus_music
-global.json = {"see_version":-1,"version":0,"bpm":180,"spd":4,"offset":1.48,"loop_start":0,"loop_end":999999,"loop":false,"tracks":[{"name":"tr_attacks_1","patterns":[{"note":"bullet","values":{"type":1}}]},{"name":"tr_effects_1","patterns":[{"note":"flash","values":{"alpha":0.5}}]}]}
+global.json = {"see_version":-1,"version":0,"bpm":180,"spd":4,"offset":1.47,"loop_start":0,"loop_end":999999,"loop":false,"tracks":[{"name":"tr_attacks_1","patterns":[{"note":"bullet","values":{"type":1}}]},{"name":"tr_effects_1","patterns":[{"note":"flash","values":{"alpha":0.5}}]}]}
 
 #endregion
 
