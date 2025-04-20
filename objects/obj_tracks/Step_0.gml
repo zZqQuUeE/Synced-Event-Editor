@@ -21,7 +21,7 @@ scroll = clamp(scroll, -99999, 0) // TODO -30 * array_length(patterns) - 50
 if playing {
 	if not old_playing {
 		old_playing = true
-		audio_play_sound(global.music, 1, 0, 1, playpos)
+		audio_play_sound_on(global.misc.music_emitter, global.music, 1, 0, 1, playpos + global.json.offset)
 	}
 	playpos += delta_time / 1000000
 } else {
