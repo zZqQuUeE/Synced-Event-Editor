@@ -44,6 +44,8 @@ if not editing {
 	draw_set_color(c_red)
 	draw_set_alpha(0.3)
 	draw_rectangle(0, scroll + ypos - pattern_gap/2, guiw, scroll + ypos + pattern_gap/2, false)
+	draw_set_alpha(1)
+	draw_rectangle(3, 3, guiw - 3, guih - 3, true)
 }
 draw_set_alpha(1)
 draw_set_color(c_white)

@@ -23,7 +23,7 @@ if scr_button_check_pressed(230, 20, 410, 80) {
 	} catch(e) {
 		show_debug_message(e)
 	}
-	instance_create_depth(0, 0, 0, obj_tracks)
+	instance_create_depth(0, 0, obj_game.depth, obj_tracks)
 	scr_play_button_sfx()
 }
 

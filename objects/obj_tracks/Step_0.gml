@@ -43,7 +43,8 @@ if editing {
 		if floor(mousex / track_gap) < array_length(tracks) {
 			if mouse_check_button_pressed(mb_left) {
 				var len = array_length(patterns[floor(mousex / track_gap)])
-				var ind = clamp(floor((scroll + mousey - 200) / pattern_gap), 0, len)
+				var ind = clamp(floor((-scroll + mousey - 200) / pattern_gap), 0, len)
+				show_debug_message(ind)
 				if ind == len {
 					array_insert(patterns[floor(mousex / track_gap)], ind, {"note":"---","values":{}})
 				} else {

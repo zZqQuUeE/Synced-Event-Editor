@@ -8,8 +8,6 @@ for (var i = 0; i < array_length(global.json.tracks); i++) {
 	//	array_push(patterns[i], global.json.tracks[i].patterns[ii])
 	//}
 }
-show_debug_message(patterns)
-show_debug_message(tracks)
 scroll = 0
 
 track_gap = 300
