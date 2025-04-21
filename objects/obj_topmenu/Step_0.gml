@@ -8,7 +8,9 @@ if scr_button_check_pressed(20, 20, 200, 80) {
 		//array_copy(arr, 0, obj_tracks.patterns[i], 0, array_length(obj_tracks.patterns[i]))
 		struct_set(struct[i], "patterns", arr)
 	}
-	struct_set(global.json, "tracks", struct)
+	if is_struct(global.json) or true { // i hate feather messages
+		struct_set(global.json, "tracks", struct)
+	}
 	
 	var json = json_stringify(global.json)
 	clipboard_set_text(json)
@@ -24,6 +26,7 @@ if scr_button_check_pressed(230, 20, 410, 80) {
 		show_debug_message(e)
 	}
 	instance_create_depth(0, 0, obj_game.depth, obj_tracks)
+	audio_stop_all()
 	scr_play_button_sfx()
 }
 
