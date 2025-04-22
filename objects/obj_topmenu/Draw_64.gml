@@ -3,9 +3,9 @@ var guih = global.ui.guih
 
 scr_draw_rectangle_ui(0, 0, guiw, 180)
 scr_draw_rectangle_ui(20, 20, 200, 80)
-scr_draw_text_ui(lerp(20, 200, 0.5), 50, "Save", 0.2, 0.2)
+scr_draw_text_ui(lerp(20, 200, 0.5), 50, "Save", 0.3, 0.3)
 scr_draw_rectangle_ui(230, 20, 410, 80)
-scr_draw_text_ui(lerp(230, 410, 0.5), 50, "Load", 0.2, 0.2)
+scr_draw_text_ui(lerp(230, 410, 0.5), 50, "Load", 0.3, 0.3)
 draw_set_halign(fa_left)
 scr_draw_text_ui(10, 100, "BPM: " + string(global.json.bpm), 0.15, 0.15)
 scr_draw_text_ui(10, 120, "Speed: " + string(global.json.spd), 0.15, 0.15)
