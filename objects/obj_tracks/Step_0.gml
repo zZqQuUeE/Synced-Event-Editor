@@ -46,9 +46,9 @@ if editing {
 				var ind = clamp(floor((-scroll + mousey - 200) / pattern_gap), 0, len)
 				show_debug_message(ind)
 				if ind == len {
-					array_insert(patterns[floor(mousex / track_gap)], ind, {"note":"---","values":{}})
+					array_insert(patterns[floor(mousex / track_gap)], ind, obj_topmenu.target_pattern)
 				} else {
-					array_set(patterns[floor(mousex / track_gap)], ind, {"note":"---","values":{}})
+					array_set(patterns[floor(mousex / track_gap)], ind, obj_topmenu.target_pattern)
 				}
 			}
 		}

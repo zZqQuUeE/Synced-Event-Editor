@@ -13,6 +13,12 @@ draw_set_halign(fa_right)
 scr_draw_text_ui(guiw - 10, 160, "Song: " + global.json.music_name, 0.15, 0.15)
 draw_set_halign(fa_center)
 
+scr_draw_rectangle_ui(guiw - 200, 20, guiw - 19, 80)
+scr_draw_text_ui(lerp(guiw - 200, guiw - 10, 0.5), 50, "Set\nPattern", 0.2, 0.2)
+draw_set_halign(fa_right)
+scr_draw_text_ui(guiw - 220, 50, string_replace_all(string(target_pattern), " ", ""), 0.08, 0.08)
+draw_set_halign(fa_center)
+
 if obj_tracks.playing {
 	draw_set_alpha(0.5)
 }

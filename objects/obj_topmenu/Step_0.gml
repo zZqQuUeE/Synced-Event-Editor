@@ -1,3 +1,6 @@
+var guiw = global.ui.guiw
+var guih = global.ui.guih
+
 if scr_button_check_pressed(20, 20, 200, 80) {
 	// save
 	var struct = []
@@ -40,4 +43,15 @@ if scr_button_check_pressed(50, 140, 82, 172) {
 if scr_button_check_pressed(90, 140, 90 + 32, 172) {
 	obj_tracks.playing = false
 	obj_tracks.playpos = 0
+}
+
+// set pattern
+if scr_button_check_pressed(guiw - 200, 20, guiw - 19, 80) {
+	var clipboard = clipboard_get_text()
+	try {
+		target_pattern = json_parse(clipboard)
+		scr_play_button_sfx()
+	} catch(e) {
+		show_debug_message(e)
+	}
 }
