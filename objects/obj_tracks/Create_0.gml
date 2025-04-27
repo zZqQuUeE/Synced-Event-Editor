@@ -17,4 +17,6 @@ playpos = 0
 playing = false
 old_playing = false
 editing = false
+
+old_pattern_index = -999
 #endregion

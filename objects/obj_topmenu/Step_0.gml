@@ -48,10 +48,14 @@ if scr_button_check_pressed(90, 140, 90 + 32, 172) {
 // set pattern
 if scr_button_check_pressed(guiw - 200, 20, guiw - 19, 80) {
 	var clipboard = clipboard_get_text()
+	var tp = {}
 	try {
-		target_pattern = json_parse(clipboard)
-		scr_play_button_sfx()
+		tp = json_parse(clipboard)
 	} catch(e) {
 		show_debug_message(e)
+	}
+	if struct_exists(tp, "note") and struct_exists(tp, "values") {
+		global.target_pattern = tp
+		scr_play_button_sfx()
 	}
 }

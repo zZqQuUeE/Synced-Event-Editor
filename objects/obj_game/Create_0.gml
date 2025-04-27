@@ -1,4 +1,9 @@
 #region global values
+global.target_pattern = {
+  "note": "---",
+  "values": {}
+}
+
 global.ui = {
 	guiw: browser_width,
 	guih: browser_height,
