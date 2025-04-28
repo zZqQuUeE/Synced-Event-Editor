@@ -1,10 +1,16 @@
-# CHILD EVENT DOESN'T WORKS!!!!!
-too lazy
+# CHILD EVENT DOESN'T WORK!!!!!
+im too lazy to fix
 ***
 - tutorial coming (not so) soon
 - also only Korean
 
 ***
+
+# 개요는영어로도그재팬ㅍㅎㅎㅎㅎㅎ
+대충 노래싱크 맞춰서 이펙트 나오는거 만드는 프로그렘;;<br>
+내 게임들 커스텀 맵이나 보스같은거 만들때 이거로 만들면됨<br>
+저장 불러오기는 각각 클립보드에 복사시키기, 복사한 내용 불러오기<br>
+이거 코드 그대로 가져가서 강화시키든 알아서 해도 되는데 그럴거면 내 이름만 남겨줘라ㅇㅋ?
 
 # 이벤트
 {"note":"---","values":{},"child":{}} <<<< 기본 이벤트 형식
@@ -18,7 +24,7 @@ too lazy
 - {"note":"flash","values":{"time":0.10,"alpha":0.30,"color":"#ffffff"}}
 - time: 이벤트 시작부터 종료까지 걸리는 시간 입니다. (단위: 초)
 - alpha: 섬광 효과의 시작 볼투명도 입니다. (0~1)
-- color: 섬광 효과의 색상 입니다. (헥스 코드로 작성)
+- color: 섬광 효과의 색상 입니다. (헥스 코드 문자열로 작성, 알파벳은 소문자로)
 ### se_camera_beat
 - {"note":"camera_beat","values":{"time":0.4,"start_zoom":1.1,"end_zoom":1,"start_angle":5,"end_angle":0}}
 - time: 이벤트 시작부터 종료까지 걸리는 시간 입니다. (단위: 초)
@@ -27,3 +33,8 @@ too lazy
 ### se_bullet
 
 ### se_bullet_circle
+
+## Untitled Square Game 이벤트
+### se_wall
+
+### se_set_color
