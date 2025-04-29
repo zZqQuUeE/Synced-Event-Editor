@@ -32,7 +32,7 @@ if playing {
 			if array_length(patterns[i]) > pattern_index {
 				var asset = asset_get_index("se_" + patterns[i][pattern_index].note)
 				if asset {
-					instance_create_depth(0, 0, 0, asset, patterns[i][pattern_index].values)
+					instance_create_depth(0, 0, -1000, asset, patterns[i][pattern_index].values)
 				}
 			}
 		}

@@ -13,6 +13,7 @@ global.ui = {
 	boxthickness: 8,
 	text_color_1: [c_white, c_white, #DDDDDD, #DDDDDD],
 	text_color_2: [c_black, c_black, c_black, c_black],
+	select_color: [c_yellow, c_yellow, c_white, c_white],
 	
 	font: font_add(working_directory + "gamefont.ttf", 12, 0, 0, 32, 128),
 	//font_jp: font_add(working_directory + "gamejpfont.ttf", 60, 0, 0, 20, 40959),
