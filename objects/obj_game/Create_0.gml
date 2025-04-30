@@ -4,6 +4,10 @@ global.target_pattern = {
   "values": {}
 }
 
+global.game = {
+	delta: 0
+}
+
 global.ui = {
 	guiw: browser_width,
 	guih: browser_height,
@@ -23,6 +27,15 @@ global.ui = {
 	
 	STRUCTEND: 0
 }
+
+global.camera = {
+	width: 0,
+	height: 0,
+	xpos: 0,
+	ypos: 0,
+	scope: 1
+}
+
 global.misc = {
 	// sound
 	reverb_bus: audio_bus_create(),
@@ -51,5 +64,4 @@ audio_emitter_bus(global.misc.music_emitter, global.misc.reverb_bus)
 //audio_emitter_gain(global.misc.music_emitter, global.misc.music_volume)
 #endregion
 
-scr_gui_init_resolution()
 scr_gui_init_font()

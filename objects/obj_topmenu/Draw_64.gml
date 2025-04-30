@@ -19,6 +19,9 @@ draw_set_halign(fa_right)
 scr_draw_text_ui(guiw - 10, 100, string_replace_all(string(global.target_pattern), " ", ""), 0.1, 0.1)
 draw_set_halign(fa_center)
 
+//scr_draw_rectangle_ui(guiw - 200 - 220, 20, guiw - 19 - 220, 80)
+//scr_draw_text_ui(lerp(guiw - 200, guiw - 10, 0.5)-220, 50, "Add\nTrack", 0.2, 0.2)
+
 if obj_tracks.playing {
 	draw_set_alpha(0.5)
 }

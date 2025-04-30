@@ -1,8 +1,8 @@
 var guiw = global.ui.guiw
 var guih = global.ui.guih
 
+// save
 if scr_button_check_pressed(20, 20, 200, 80) {
-	// save
 	var struct = []
 	for (var i = 0; i < array_length(obj_tracks.tracks); i++) {
 		array_push(struct, {})
@@ -19,8 +19,8 @@ if scr_button_check_pressed(20, 20, 200, 80) {
 	clipboard_set_text(json)
 	scr_play_button_sfx()
 }
+// load
 if scr_button_check_pressed(230, 20, 410, 80) {
-	// load
 	var clipboard = clipboard_get_text()
 	instance_destroy(obj_tracks)
 	try {
