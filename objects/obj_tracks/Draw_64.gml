@@ -2,7 +2,7 @@ var guiw = global.ui.guiw
 var guih = global.ui.guih
 
 draw_set_color(c_black)
-draw_set_alpha(0.5)
+draw_set_alpha(0.9)
 draw_rectangle(0, 0, guiw, guih, 0)
 draw_set_alpha(1)
 draw_set_color(c_white)
