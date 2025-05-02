@@ -1,6 +1,8 @@
 var guiw = global.ui.guiw
 var guih = global.ui.guih
 
+gold_pattern_timer -= global.game.delta
+
 // save
 if scr_button_check_pressed(20, 20, 200, 80) {
 	var struct = []
