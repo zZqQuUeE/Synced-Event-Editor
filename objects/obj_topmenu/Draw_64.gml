@@ -18,9 +18,7 @@ scr_draw_text_ui(lerp(guiw - 200, guiw - 10, 0.5), 50, "Set\nPattern", 0.2, 0.2)
 draw_set_halign(fa_right)
 scr_draw_text_ui(guiw - 10, 100, string_replace_all(string(global.target_pattern), " ", ""), 0.1, 0.1)
 if gold_pattern_timer > 0 {
-	draw_set_color(c_yellow)
-draw_set_alpha(gold_pattern_timer / 30)
-scr_draw_text_ui(guiw - 10, 100, string_replace_all(string(global.target_pattern), " ", ""), 0.1, 0.1)
+	scr_draw_text_smoke(guiw - 10, 100, string_replace_all(string(global.target_pattern), " ", ""), 0.1, 0.1, [c_yellow, c_yellow, c_yellow, c_yellow], global.ui.text_color_2, 2, gold_pattern_timer / 40)
 }
 draw_set_halign(fa_center)
 draw_set_color(c_white)

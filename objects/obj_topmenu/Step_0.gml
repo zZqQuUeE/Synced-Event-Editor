@@ -2,6 +2,10 @@ var guiw = global.ui.guiw
 var guih = global.ui.guih
 
 gold_pattern_timer -= global.game.delta
+if old_pattern != string_replace_all(string(global.target_pattern), " ", "") {
+	old_pattern = string_replace_all(string(global.target_pattern), " ", "")
+	gold_pattern_timer = 40
+}
 
 // save
 if scr_button_check_pressed(20, 20, 200, 80) {
