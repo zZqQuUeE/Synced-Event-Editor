@@ -9,6 +9,7 @@ for (var i = 0; i < array_length(global.json.tracks); i++) {
 	//}
 }
 scroll = 0
+h_scroll = 0 // horizontal scroll
 
 track_gap = 300
 pattern_gap = 30

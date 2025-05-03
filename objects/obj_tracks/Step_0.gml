@@ -55,8 +55,9 @@ var mousey = device_mouse_y_to_gui(0)
 if editing {
 	if mousey > 190 {
 		if floor(mousex / track_gap) < array_length(tracks) {
+			var tp = global.target_pattern
 			if mouse_check_button_pressed(mb_right) {
-				global.target_pattern = {
+				tp = {
 					"note": "---",
 					"values": {}
 				}
@@ -65,9 +66,9 @@ if editing {
 				var len = array_length(patterns[floor(mousex / track_gap)])
 				var ind = clamp(floor((-scroll + mousey - 200) / pattern_gap), 0, len)
 				if ind == len {
-					array_insert(patterns[floor(mousex / track_gap)], ind, global.target_pattern)
+					array_insert(patterns[floor(mousex / track_gap)], ind, tp)
 				} else {
-					array_set(patterns[floor(mousex / track_gap)], ind, global.target_pattern)
+					array_set(patterns[floor(mousex / track_gap)], ind, tp)
 				}
 			}
 		}

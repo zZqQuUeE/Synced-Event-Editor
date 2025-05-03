@@ -51,6 +51,16 @@ if scr_button_check_pressed(90, 140, 90 + 32, 172) {
 	obj_tracks.playpos = 0
 }
 
+// add track
+if scr_button_check_pressed(guiw - 200 - 220, 20, guiw - 19 - 220, 80) {
+	var track_name = "tr_" + string(array_length(obj_tracks.tracks) )
+	var track = array_create(1, {"note": "---","values":{}})
+	//array_push(global.json.tracks, track)
+	array_push(obj_tracks.patterns, track)
+	array_push(obj_tracks.tracks, track_name)
+	show_debug_message(obj_tracks.patterns)
+}
+
 // set pattern
 if scr_button_check_pressed(guiw - 200, 20, guiw - 19, 80) {
 	var clipboard = clipboard_get_text()
