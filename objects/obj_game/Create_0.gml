@@ -48,7 +48,8 @@ global.misc = {
 }
 global.music = mus_music
 global.json = {"see_version":-1,"version":0,"music_name":"DJ Noriken - Elektrick U-Phoria","bpm":180,"spd":4,"offset":1.47,"loop_start":0,"loop_end":999999,"loop":false,"tracks":[{"name":"tr_attacks_1","patterns":[{"note":"bullet","values":{"type":1}}]},{"name":"tr_effects_1","patterns":[{"note":"flash","values":{"alpha":0.5}}]}]}
-
+global.mbr = false // mb_right
+global.mbm = false // mb_middle
 #endregion
 
 #region audio emitters
