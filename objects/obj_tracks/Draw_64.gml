@@ -12,11 +12,14 @@ draw_set_color(c_white)
 var textsize = 0.2
 draw_set_halign(fa_left)
 for (var ii = 0; ii < array_length(tracks); ii++) {
-	var xindex = ii * track_gap
+	var xindex = ii * track_gap + h_scroll
 	for (var i = 0; i < array_length(patterns[ii]); i++) {
 		scr_draw_text_ui(xindex, scroll + 215 + pattern_gap * i, string(i), textsize, textsize, 0, 0.5)
 		var txt = string(patterns[ii][i].note)
-		scr_draw_text_ui(xindex + 40, scroll + 215 + pattern_gap * i, txt, textsize, textsize, 0, 1)
+		if patterns[ii][i].note == "function" {
+			txt = txt + " (" + string(patterns[ii][i].values.index) + ")"
+		}
+		scr_draw_text_ui(xindex + 50, scroll + 215 + pattern_gap * i, txt, textsize, textsize, 0, 1)
 		draw_set_alpha(0.3)
 		//draw_line(xindex, scroll + 215 + pattern_gap * i - pattern_gap/2, xindex + track_gap, scroll + 215 + pattern_gap * i - pattern_gap/2)
 		draw_line(xindex, scroll + 215 + pattern_gap * i + pattern_gap/2, xindex + track_gap, scroll + 215 + pattern_gap * i + pattern_gap/2)

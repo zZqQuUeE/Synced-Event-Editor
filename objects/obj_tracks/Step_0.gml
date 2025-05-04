@@ -2,19 +2,29 @@ var guiw = global.ui.guiw
 var guih = global.ui.guih
 
 #region scroll
+var shift = keyboard_check(vk_shift)
 if mouse_wheel_down() {
-	scroll -= 30
+	if shift {
+		h_scroll -= 50
+	} else {
+		scroll -= 30
+	}
 }
 if keyboard_check(vk_down) {
 	scroll -= 150
 }
 if mouse_wheel_up() {
-	scroll += 30
+	if shift {
+		h_scroll += 50
+	} else {
+		scroll += 30
+	}
 }
 if keyboard_check(vk_up) {
 	scroll += 150
 }
 scroll = clamp(scroll, -99999, 0) // TODO -30 * array_length(patterns) - 50
+h_scroll = min(h_scroll, 0)
 #endregion
 
 #region play
@@ -28,10 +38,13 @@ if playing {
 	var pattern_index = (playpos * (global.json.bpm / 60)) * global.json.spd
 	if old_pattern_index != floor(pattern_index) {
 		old_pattern_index = floor(pattern_index)
-		for (var i = 0; i < array_length(patterns); i++) {
+		for (var i = 1; i < array_length(patterns); i++) {
 			if array_length(patterns[i]) > pattern_index {
 				var asset = asset_get_index("se_" + patterns[i][pattern_index].note)
-				if asset {
+				if patterns[i][pattern_index].note == "function" {
+					asset = asset_get_index("se_" + patterns[0][patterns[i][pattern_index].values.index].note)
+					instance_create_depth(0, 0, -1000, asset, patterns[0][patterns[i][pattern_index].values.index].values)
+				} else if asset {
 					instance_create_depth(0, 0, -1000, asset, patterns[i][pattern_index].values)
 				}
 			}
