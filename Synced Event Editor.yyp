@@ -53,6 +53,7 @@
     {"id":{"name":"scr_gui_init_font","path":"scripts/scr_gui_init_font/scr_gui_init_font.yy",},},
     {"id":{"name":"scr_gui_init_resolution","path":"scripts/scr_gui_init_resolution/scr_gui_init_resolution.yy",},},
     {"id":{"name":"scr_play_button_sfx","path":"scripts/scr_play_button_sfx/scr_play_button_sfx.yy",},},
+    {"id":{"name":"mus_music_1","path":"sounds/mus_music_1/mus_music_1.yy",},},
     {"id":{"name":"mus_music","path":"sounds/mus_music/mus_music.yy",},},
     {"id":{"name":"sfx_select","path":"sounds/sfx_select/sfx_select.yy",},},
     {"id":{"name":"bgb00001","path":"sprites/bgb00001/bgb00001.yy",},},
