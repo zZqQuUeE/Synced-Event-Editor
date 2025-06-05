@@ -10,10 +10,10 @@ if old_pattern != string_replace_all(string(global.target_pattern), " ", "") {
 // save
 if scr_button_check_pressed(20, 20, 200, 80) {
 	var struct = []
-	for (var i = 0; i < array_length(obj_tracks.tracks); i++) {
+	for (var i = 0; i < array_length(OLDobj_tracks.tracks); i++) {
 		array_push(struct, {})
-		struct_set(struct[i], "name", obj_tracks.tracks[i])
-		var arr = obj_tracks.patterns[i]
+		struct_set(struct[i], "name", OLDobj_tracks.tracks[i])
+		var arr = OLDobj_tracks.patterns[i]
 		//array_copy(arr, 0, obj_tracks.patterns[i], 0, array_length(obj_tracks.patterns[i]))
 		struct_set(struct[i], "patterns", arr)
 	}
@@ -28,37 +28,37 @@ if scr_button_check_pressed(20, 20, 200, 80) {
 // load
 if scr_button_check_pressed(230, 20, 410, 80) {
 	var clipboard = clipboard_get_text()
-	instance_destroy(obj_tracks)
+	instance_destroy(OLDobj_tracks)
 	try {
 		global.json	= json_parse(clipboard)
 	} catch(e) {
 		show_debug_message(e)
 	}
-	instance_create_depth(0, 0, obj_game.depth, obj_tracks)
+	instance_create_depth(0, 0, OLDobj_game.depth, OLDobj_tracks)
 	audio_stop_all()
 	scr_play_button_sfx()
 }
 
 // play and pause and stop
 if scr_button_check_pressed(10, 140, 42, 172) {
-	obj_tracks.playing = true
+	OLDobj_tracks.playing = true
 }
 if scr_button_check_pressed(50, 140, 82, 172) {
-	obj_tracks.playing = false
+	OLDobj_tracks.playing = false
 }
 if scr_button_check_pressed(90, 140, 90 + 32, 172) {
-	obj_tracks.playing = false
-	obj_tracks.playpos = 0
+	OLDobj_tracks.playing = false
+	OLDobj_tracks.playpos = 0
 }
 
 // add track
 if scr_button_check_pressed(guiw - 200 - 220, 20, guiw - 19 - 220, 80) {
-	var track_name = "tr_" + string(array_length(obj_tracks.tracks) )
+	var track_name = "tr_" + string(array_length(OLDobj_tracks.tracks) )
 	var track = array_create(1, {"note": "---","values":{}})
 	//array_push(global.json.tracks, track)
-	array_push(obj_tracks.patterns, track)
-	array_push(obj_tracks.tracks, track_name)
-	show_debug_message(obj_tracks.patterns)
+	array_push(OLDobj_tracks.patterns, track)
+	array_push(OLDobj_tracks.tracks, track_name)
+	show_debug_message(OLDobj_tracks.patterns)
 }
 
 // set pattern

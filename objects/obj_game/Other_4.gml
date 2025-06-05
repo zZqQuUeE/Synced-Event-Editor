@@ -1,2 +1,2 @@
-instance_create_depth(x, y, depth, obj_tracks)
-instance_create_depth(x, y, depth-10, obj_topmenu)
+//instance_create_depth(x, y, depth, OLDobj_tracks)
+//instance_create_depth(x, y, depth-10, OLDobj_topmenu)

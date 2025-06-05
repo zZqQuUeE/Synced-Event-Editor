@@ -27,11 +27,11 @@ draw_set_alpha(1)
 scr_draw_rectangle_ui(guiw - 200 - 220, 20, guiw - 19 - 220, 80)
 scr_draw_text_ui(lerp(guiw - 200, guiw - 10, 0.5)-220, 50, "Add\nTrack", 0.2, 0.2)
 
-if obj_tracks.playing {
+if OLDobj_tracks.playing {
 	draw_set_alpha(0.5)
 }
 draw_sprite_stretched(spr_ui_play, 0, 10, 140, 32, 32)
-if not obj_tracks.playing {
+if not OLDobj_tracks.playing {
 	draw_set_alpha(0.5)
 } else {
 	draw_set_alpha(1)

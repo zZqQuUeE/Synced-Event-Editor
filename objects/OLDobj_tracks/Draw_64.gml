@@ -45,9 +45,9 @@ var ypos = floor((215 + (playpos * (global.json.bpm / 60)) * global.json.spd * p
 //else {
 //	ypos = -scroll + 215//floor((215 + (scroll * (global.json.bpm / 60)) * global.json.spd * pattern_gap) / pattern_gap) * pattern_gap
 //}
-if obj_topmenu.gold_pattern_timer > 0 {
+if OLDobj_topmenu.gold_pattern_timer > 0 {
 	draw_set_color(c_yellow)
-	draw_set_alpha(obj_topmenu.gold_pattern_timer / 60)
+	draw_set_alpha(OLDobj_topmenu.gold_pattern_timer / 60)
 	draw_rectangle(0, scroll + ypos - pattern_gap/2, guiw, scroll + ypos + pattern_gap/2, false)
 }
 if not editing {
