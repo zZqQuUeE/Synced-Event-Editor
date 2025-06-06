@@ -1,0 +1,8 @@
+input_select = keyboard_check(vk_shift)
+input_start = keyboard_check_pressed(vk_enter)
+input_a = keyboard_check_pressed(ord("S"))
+input_b = keyboard_check_pressed(ord("A"))
+input_l = keyboard_check(vk_left)
+input_r = keyboard_check(vk_right)
+input_u = keyboard_check(vk_up)
+input_d = keyboard_check(vk_down)
