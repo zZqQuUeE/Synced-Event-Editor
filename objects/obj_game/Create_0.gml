@@ -63,8 +63,9 @@ audio_emitter_bus(global.misc.music_emitter, global.misc.reverb_bus)
 
 #region values
 page = 0
-chain_dist = 50
-// song, chain, phrase, instr, option
+chain_dist = 30 // song, chain, phrase, instr, option
+playing = false
+play_pos = [0, 0] // chain, phrase
 #endregion
 
 #region instances
