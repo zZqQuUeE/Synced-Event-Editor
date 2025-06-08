@@ -1,5 +1,7 @@
 input_a = false
 input_b = false
+input_ah = false // a hold
+input_bh = false // b hold
 input_select = false
 input_start = false
 input_l = false

@@ -1,5 +1,6 @@
 #region values
 target_chain = 0
+copied_chain = 0
 
 cursor_x = 105
 cursor_y = 105

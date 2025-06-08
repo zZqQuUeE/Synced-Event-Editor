@@ -5,6 +5,6 @@ function scr_int_format(a) {
 		} else if a < 100 {
 			return("0" + string(a))
 		}
-	}
+	} else if a == -1 { return("---") }
 	return(string(a))
 }

@@ -42,7 +42,9 @@ global.misc = {
 	STRUCTEND: 0
 }
 global.music = mus_music
-global.json = {"music_name":"GANEME - Ever Green","bpm":180.0,"spd":4.0,"offset":0.0,"loop_start":0.0,"loop_end":999999.0,"see_version":-1.0,"instruments":[{"name":"Dummy","object":"qwertyuiopasdfghjk","values":{}},{"name":"Flash 1","object":"se_flash","values":{"color":[0,0,100],"time":0.3,"alpha":0.5}},{"name":"Camera Beat 1","values":{"start_angle":0,"end_angle":0,"time":0.25,"start_zoom":1.1,"end_zoom":1}}],"channels":[{"name":"Main","chains":[0]}],"chains":[[0]],"phrases":[[1,0,0,0,2,0,0,0,2,0,0,0,2,0,0,0]]}
+
+global.json = {"music_name":"GANEME - Ever Green","bpm":180.0,"spd":4.0,"offset":0.0,"loop_start":0.0,"loop_end":999999.0,"see_version":-1.0,"instruments":[{"name":"Dummy","object":"qwertyuiopasdfghjk","values":{}},{"name":"Flash 1","object":"se_flash","values":{"color":[0,0,100],"time":0.3,"alpha":0.5}},{"name":"Camera Beat 1","values":{"start_angle":0,"end_angle":0,"time":0.25,"start_zoom":1.1,"end_zoom":1}}],"channels":[{"name":"Main","chains":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]},{"name":"Attacks","chains":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]}],"chains":[[0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]],"phrases":[[1,0,0,0,2,0,0,0,2,0,0,0,2,0,0,0]]}
+
 global.dpad_timers = [0, 0, 0, 0] // l r u d
 //global.mbr = false // mb_right
 //global.mbm = false // mb_middle
