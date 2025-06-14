@@ -1,4 +1,4 @@
-function scr_button_check_pressed(x1, y1, x2, y2, devices = 5) {
+function scr_button_check(x1, y1, x2, y2, devices = 5) {
 	var value = false
 	//if false and keyboard_check(ord("U")) {
 	//	draw_set_alpha(0.4)
@@ -6,7 +6,7 @@ function scr_button_check_pressed(x1, y1, x2, y2, devices = 5) {
 	//	draw_set_alpha(1)
 	//}
 	for (var i = 0; i < devices; i++) {
-		if device_mouse_check_button_pressed(i, mb_left) {
+		if device_mouse_check_button(i, mb_left) {
 			var touchx = device_mouse_x_to_gui(i)
 			var touchy = device_mouse_y_to_gui(i)
 			if clamp(touchx, x1, x2) == touchx or clamp(touchx, x2, x1) == touchx {

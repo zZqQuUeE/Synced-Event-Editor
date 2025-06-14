@@ -52,6 +52,7 @@
     {"id":{"name":"OLDroom_main","path":"rooms/OLDroom_main/OLDroom_main.yy",},},
     {"id":{"name":"room_main","path":"rooms/room_main/room_main.yy",},},
     {"id":{"name":"scr_button_check_pressed","path":"scripts/scr_button_check_pressed/scr_button_check_pressed.yy",},},
+    {"id":{"name":"scr_button_check","path":"scripts/scr_button_check/scr_button_check.yy",},},
     {"id":{"name":"scr_draw_rectangle_ui","path":"scripts/scr_draw_rectangle_ui/scr_draw_rectangle_ui.yy",},},
     {"id":{"name":"scr_draw_text_smoke_ui","path":"scripts/scr_draw_text_smoke_ui/scr_draw_text_smoke_ui.yy",},},
     {"id":{"name":"scr_draw_text_smoke","path":"scripts/scr_draw_text_smoke/scr_draw_text_smoke.yy",},},
