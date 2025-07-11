@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":220.0,
+  "duration":193.30612,
   "name":"mus_music",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"mus_music.mp3",
   "type":0,
-  "volume":0.22,
+  "volume":1.0,
 }
