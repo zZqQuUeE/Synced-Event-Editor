@@ -15,7 +15,7 @@ if page == 0 {
 	
 	draw_set_halign(fa_left)
 	scr_draw_text_ui(10, 100, "BPM: " + string_format(global.json.bpm, 0, 1), 0.15, 0.15)
-	scr_draw_text_ui(10, 120, "Instance Count: " + string(instance_count), 0.15, 0.15)
+	scr_draw_text_ui(10, 120, "Instance Count: " + string(instance_count-3), 0.15, 0.15)
 	draw_set_halign(fa_right)
 	scr_draw_text_ui(guiw - 10, 160, "Song: " + global.json.music_name, 0.15, 0.15)
 	draw_set_halign(fa_center)
